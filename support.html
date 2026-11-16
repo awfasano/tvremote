@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TV Remote support</title>
+<meta name="description" content="Help for TV Remote — finding your TV, pairing, power over HDMI-CEC, Roku Limited mode, Beta brands, and restoring purchases.">
+<link rel="canonical" href="https://awfasano.github.io/tvremote/support.html">
+<link rel="icon" href="assets/app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root{--bg:#f5f7fc;--surface:#fff;--ink:#0c1326;--muted:#55617c;--line:#e2e8f4;--accent:#3b73f5;--accent-ink:#2a57c9}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0e1a;--surface:#141b30;--ink:#eef2fb;--muted:#9aa6c2;--line:#223052;--accent:#5b8cff;--accent-ink:#9cb9ff;color-scheme:dark}}
+  :root[data-theme="dark"]{--bg:#0a0e1a;--surface:#141b30;--ink:#eef2fb;--muted:#9aa6c2;--line:#223052;--accent:#5b8cff;--accent-ink:#9cb9ff;color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.6}
+  .wrap{width:100%;max-width:760px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+  header{border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:Sora,sans-serif;font-weight:700;font-size:1.05rem}
+  .brand img{width:34px;height:34px;border-radius:8px}
+  nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:.95rem;font-weight:500}
+  nav a[aria-current]{color:var(--accent-ink)}
+  main .wrap{padding-block:48px}
+  .eyebrow{font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+  h1{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(2rem,6vw,2.8rem);letter-spacing:-.02em;line-height:1.08;margin:.3em 0 0;text-wrap:balance}
+  .lead{font-size:1.1rem;color:var(--muted);margin:18px 0 0}
+  .cta{display:inline-block;margin-top:20px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:12px}
+  h2{font-family:Sora,sans-serif;font-weight:700;font-size:1.2rem;margin:34px 0 6px;letter-spacing:-.01em}
+  p{margin:8px 0}
+  a{color:var(--accent-ink)}
+  .q{font-weight:600;color:var(--ink);margin-top:22px}
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;padding-block:28px}
+  footer a{color:var(--muted);text-decoration:none;margin-left:16px}
+  code{background:color-mix(in srgb,var(--accent) 12%,transparent);padding:1px 6px;border-radius:5px;font-size:.92em}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="">TV Remote</a>
+  <nav aria-label="Main"><a href="index.html">Overview</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="eyebrow">TV Remote support</p>
+  <h1>Need a hand?</h1>
+  <p class="lead">Email <a href="mailto:awfasano@gmail.com?subject=TV%20Remote%20support">awfasano@gmail.com</a> with your TV's brand and model and what happened — we read every message and fix real issues fast.</p>
+  <a class="cta" href="mailto:awfasano@gmail.com?subject=TV%20Remote%20support">Email support</a>
+
+  <h2>Common questions</h2>
+
+  <p class="q">The app can't find my TV</p>
+  <p>Make sure the TV is powered on and on the <strong>same Wi-Fi network</strong> as your phone (not a guest network, and not 5GHz vs 2.4GHz on separate SSIDs). Allow the <strong>Local Network</strong> permission when iOS asks — it's required to reach your TV. If it still doesn't appear, tap <strong>Add TV</strong> and enter the TV's IP address, which you'll find in the TV's network settings or your router.</p>
+
+  <p class="q">My Roku says it's blocking control</p>
+  <p>On the Roku, open <code>Settings › System › Advanced system settings › Control by mobile apps › Network access</code> and set it to <strong>Default</strong> (or Permissive). TV Remote also works around Roku's Limited mode automatically where it can.</p>
+
+  <p class="q">Power or volume doesn't work on a streaming stick</p>
+  <p>A streaming stick (like a Roku or Fire TV stick) reaches the TV's power and volume through <strong>HDMI-CEC</strong>. Turn CEC on in your TV's settings — it's called <em>Anynet+</em> (Samsung), <em>SIMPLINK</em> (LG), <em>Bravia Sync</em> (Sony), or just CEC — then try again.</p>
+
+  <p class="q">Fire TV asks for a PIN</p>
+  <p>That's expected the first time. Enter the PIN shown on the TV screen; the pairing is remembered after that.</p>
+
+  <p class="q">A brand is marked "Beta"</p>
+  <p>Those TV types work in our testing but we haven't confirmed them on every model yet. If yours misbehaves, email us the brand and model and we'll get it working.</p>
+
+  <p class="q">I paid before and want it back</p>
+  <p>Open the app's Go Pro screen and tap <strong>Restore Purchases</strong>. Pro restores on any device signed in to the same Apple&nbsp;ID.</p>
+
+  <p class="q">Managing or cancelling the yearly plan</p>
+  <p>The yearly plan starts with a 7-day free trial. Cancel during the trial and you're never charged. Manage or cancel any time in <code>Settings › your name › Subscriptions</code> on your device.</p>
+</div></main>
+<footer><div class="wrap">
+  <div>TV Remote · iPhone, iPad &amp; Mac</div>
+  <div><a href="index.html">Overview</a><a href="privacy.html">Privacy</a><a href="mailto:awfasano@gmail.com">Contact</a></div>
+</div></footer>
+</body>
+</html>
